@@ -43,99 +43,43 @@ public enum Module {
 public extension Module {
     static func appPackages(_ product: Product) -> [AppPackage] {
         switch product {
-        case .Offs:
-            return [
-                (.Offs, .IOS)
-            ]
-        case .Off: return []
-        case .Toff:
-            return [
-                (.Toff, .IOS)
-            ]
-        case .Soff:
-            return [
-                (.Soff, .IOS)
-            ]
+        case .Off: 
+            return []
         }
     }
     
     static func featurePackages(_ product: Product) -> [FeaturePackage] {
         switch product {
-        case .Offs: return [] + featurePackages(.Toff) + featurePackages(.Soff)
         case .Off: 
             return [
-                (.Off, .Calendar)
+                (.Off, .Empty)
             ]
-        case .Toff:
-            return [
-                (.Toff, .Calendar),
-                (.Toff, .Portfolio),
-                (.Toff, .MyPage),
-                (.Toff, .Trade),
-            ] + featurePackages(.Off)
-        case .Soff:
-            return [
-                (.Soff, .Calendar),
-                (.Soff, .Portfolio),
-                (.Soff, .MyPage),
-                (.Soff, .Study),
-            ] + featurePackages(.Off)
         }
     }
     
     static func domainPackages(_ product: Product) -> [DomainPackage] {
         switch product {
-        case .Offs:
-            return [] + domainPackages(.Toff) + domainPackages(.Soff)
         case .Off: 
-            return [
-                (.Off, .Calendar)
-            ]
-        case .Toff:
-            return [
-                (.Toff, .Trade)
-            ] + domainPackages(.Off)
-        case .Soff:
-            return [
-                (.Soff, .Study)
-            ] + domainPackages(.Off)
+            return []
         }
     }
     
     static func corePackages(_ product: Product) -> [CorePackage] {
         switch product {
-        case .Offs: return [] + corePackages(.Toff) + corePackages(.Soff)
         case .Off:
-            return [
-                (.Off, .OPENAI),
-                (.Off, .Admob)
-            ]
-        case .Toff: return [] + corePackages(.Off)
-        case .Soff: return [] + corePackages(.Off)
+            return []
         }
     }
     
     static func sharedPackages(_ product: Product) -> [SharedPackage] {
         switch product {
-        case .Offs: return [] + sharedPackages(.Toff) + sharedPackages(.Soff)
         case .Off:
             return [
                 (.Off, .DesignSystem),
-                (.Off, .Network),
                 (.Off, .Util),
                 (.Off, .Foundation),
                 (.Off, .ThirdPartyLib)
             ]
-        case .Toff:
-            return [
-                (.Toff, .ThirdPartyLib),
-                (.Toff, .Util)
-            ] + sharedPackages(.Off)
-        case .Soff:
-            return [
-                (.Soff, .ThirdPartyLib),
-                (.Soff, .Util)
-            ] + sharedPackages(.Off)
         }
     }
 }
@@ -144,10 +88,7 @@ public extension Module {
 
 public extension Module {
     enum Product: String, CaseIterable {
-        case Offs
         case Off
-        case Toff
-        case Soff
         
         public static let name: String = "Product"
     }
@@ -170,12 +111,7 @@ public extension Module {
 
 public extension Module {
     enum Feature: String, CaseIterable {
-        case Calendar
-        case Portfolio
-        case MyPage
-        
-        case Trade
-        case Study
+        case Empty
         
         public static let name: String = "Feature"
         
@@ -185,34 +121,7 @@ public extension Module {
         
         func interfaceDependencies(_ product: Product) -> [FeaturePackage] {
             switch product {
-            case .Offs: return []
             case .Off: return []
-            case .Toff:
-                switch self {
-                case .Calendar: 
-                    return [
-                        (.Off, .Calendar),
-                        (.Toff, .Trade)
-                    ]
-                case .Portfolio:
-                    return [
-                        (.Toff, .Trade)
-                    ]
-                default: return []
-                }
-            case .Soff:
-                switch self {
-                case .Calendar:
-                    return [
-                        (.Off, .Calendar),
-                        (.Soff, .Study)
-                    ]
-                case .Portfolio:
-                    return [
-                        (.Soff, .Study)
-                    ]
-                default: return []
-                }
             }
         }
     }
@@ -222,9 +131,7 @@ public extension Module {
 
 public extension Module {
     enum Domain: String, CaseIterable {
-        case Calendar
-        case Trade
-        case Study
+        case Empty
         
         public static let name: String = "Domain"
         
@@ -238,8 +145,7 @@ public extension Module {
 
 public extension Module {
     enum Core: String, CaseIterable {
-        case OPENAI
-        case Admob
+        case Empty
         
         public static let name: String = "Core"
         
@@ -257,7 +163,6 @@ public extension Module {
         case Util
         case DesignSystem
         case ThirdPartyLib
-        case Network
         
         public static let name: String = "Shared"
         

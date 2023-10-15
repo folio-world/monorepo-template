@@ -12,10 +12,7 @@ import Foundation
 public extension String {
     static func OrganizationName(_ product: Module.Product) -> Self {
         switch product {
-        case .Offs: return "off"
         case .Off: return "off"
-        case .Toff: return ""
-        case .Soff: return "off"
         default: return ""
         }
     }
