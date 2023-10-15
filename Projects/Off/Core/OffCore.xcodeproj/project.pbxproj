@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68F097F0A81916553CB2ED2C /* libOffCoreAdmob.a in Dependencies */ = {isa = PBXBuildFile; fileRef = 7DE599960A369BEAA1CCF4CE /* libOffCoreAdmob.a */; };
+		97A09775A23857EA0148D536 /* libOffShared.a in Dependencies */ = {isa = PBXBuildFile; fileRef = A9F26F64BB1373B736CC67B0 /* libOffShared.a */; };
+		C1821A329B5777875AE503B1 /* CoreExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E982A1BC22F929788282A6F5 /* CoreExport.swift */; };
+		DB2E0091D36AEC5919E53B36 /* libOffCoreOPENAI.a in Dependencies */ = {isa = PBXBuildFile; fileRef = D7581D3542773B0988A2B2BA /* libOffCoreOPENAI.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		80A485AD87854F363940ECF2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C339FC03BC4FD9191123B3F9 /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				68F097F0A81916553CB2ED2C /* libOffCoreAdmob.a in Dependencies */,
+				DB2E0091D36AEC5919E53B36 /* libOffCoreOPENAI.a in Dependencies */,
+				97A09775A23857EA0148D536 /* libOffShared.a in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7DE599960A369BEAA1CCF4CE /* libOffCoreAdmob.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOffCoreAdmob.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9F26F64BB1373B736CC67B0 /* libOffShared.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOffShared.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7581D3542773B0988A2B2BA /* libOffCoreOPENAI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOffCoreOPENAI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E982A1BC22F929788282A6F5 /* CoreExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreExport.swift; sourceTree = "<group>"; };
+		FA430DD1EF2A02019D83CBEE /* libOffCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOffCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D638BB3854AC845D5C410F06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74023CF4D1BAF2F4AAE6254F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E982A1BC22F929788282A6F5 /* CoreExport.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		89D91E6C7EDFE840D50159BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA430DD1EF2A02019D83CBEE /* libOffCore.a */,
+				7DE599960A369BEAA1CCF4CE /* libOffCoreAdmob.a */,
+				D7581D3542773B0988A2B2BA /* libOffCoreOPENAI.a */,
+				A9F26F64BB1373B736CC67B0 /* libOffShared.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3D5C1ECE66CBED420A7AABC /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				74023CF4D1BAF2F4AAE6254F /* Sources */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		B9903E8181EFBB4481A8B4F1 = {
+			isa = PBXGroup;
+			children = (
+				B3D5C1ECE66CBED420A7AABC /* Project */,
+				CDD9FC33A219DCE3742432E0 /* Frameworks */,
+				89D91E6C7EDFE840D50159BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDD9FC33A219DCE3742432E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96798B4B91121C6330702938 /* OffCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7F150A44342CB8F1DF4EE84 /* Build configuration list for PBXNativeTarget "OffCore" */;
+			buildPhases = (
+				0D8CDC2FF6AB8939BC776DCF /* Sources */,
+				EC3742BEB19802BE47B65483 /* Resources */,
+				80A485AD87854F363940ECF2 /* Embed Frameworks */,
+				D638BB3854AC845D5C410F06 /* Frameworks */,
+				C339FC03BC4FD9191123B3F9 /* Dependencies */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OffCore;
+			productName = OffCore;
+			productReference = FA430DD1EF2A02019D83CBEE /* libOffCore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C63CC09820D750F441BD0645 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 51ABC0A216125CA113DF07EF /* Build configuration list for PBXProject "OffCore" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = B9903E8181EFBB4481A8B4F1;
+			productRefGroup = 89D91E6C7EDFE840D50159BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96798B4B91121C6330702938 /* OffCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC3742BEB19802BE47B65483 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D8CDC2FF6AB8939BC776DCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1821A329B5777875AE503B1 /* CoreExport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		60B8C7299369A45FF221983D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		890D8E6405DEFA3381A0E25C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleAppMeasurement/GoogleAppMeasurementWrapper/include/GoogleAppMeasurementTarget.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Public/GoogleUtilities-AppDelegateSwizzler.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities-Environment.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/Logger/Public/GoogleUtilities-Logger.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/MethodSwizzler/Public/GoogleUtilities-MethodSwizzler.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/NSData+zlib/Public/GoogleUtilities-NSData.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/Network/Public/GoogleUtilities-Network.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/Reachability/Public/GoogleUtilities-Reachability.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/UserDefaults/Public/GoogleUtilities-UserDefaults.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/firebase-ios-sdk/CoreOnly/Sources/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/firebase-ios-sdk/FirebaseAnalyticsWrapper/include/FirebaseAnalyticsWrapper.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/firebase-ios-sdk/SwiftPM-PlatformExclude/FirebaseAnalyticsWrap/include/FirebaseAnalyticsTarget.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/nanopb/spm_headers/nanopb.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/promises/Sources/FBLPromises/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/swift-package-manager-google-mobile-ads/GoogleMobileAdsTarget/include/GoogleMobileAdsTarget.modulemap",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleAppMeasurement/GoogleAppMeasurementWrapper/include/GoogleAppMeasurementTarget.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Public/GoogleUtilities-AppDelegateSwizzler.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities-Environment.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/Logger/Public/GoogleUtilities-Logger.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/MethodSwizzler/Public/GoogleUtilities-MethodSwizzler.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/NSData+zlib/Public/GoogleUtilities-NSData.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/Network/Public/GoogleUtilities-Network.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/Reachability/Public/GoogleUtilities-Reachability.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/UserDefaults/Public/GoogleUtilities-UserDefaults.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/firebase-ios-sdk/CoreOnly/Sources/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/firebase-ios-sdk/FirebaseAnalyticsWrapper/include/FirebaseAnalyticsWrapper.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/firebase-ios-sdk/SwiftPM-PlatformExclude/FirebaseAnalyticsWrap/include/FirebaseAnalyticsTarget.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/nanopb/spm_headers/nanopb.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/promises/Sources/FBLPromises/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/swift-package-manager-google-mobile-ads/GoogleMobileAdsTarget/include/GoogleMobileAdsTarget.modulemap",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.off.off.core;
+				PRODUCT_NAME = OffCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9764999EDC92241C70025133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B05607918AA379F73472AE2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleAppMeasurement/GoogleAppMeasurementWrapper/include/GoogleAppMeasurementTarget.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Public/GoogleUtilities-AppDelegateSwizzler.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities-Environment.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/Logger/Public/GoogleUtilities-Logger.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/MethodSwizzler/Public/GoogleUtilities-MethodSwizzler.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/NSData+zlib/Public/GoogleUtilities-NSData.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/Network/Public/GoogleUtilities-Network.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/Reachability/Public/GoogleUtilities-Reachability.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/UserDefaults/Public/GoogleUtilities-UserDefaults.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/firebase-ios-sdk/CoreOnly/Sources/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/firebase-ios-sdk/FirebaseAnalyticsWrapper/include/FirebaseAnalyticsWrapper.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/firebase-ios-sdk/SwiftPM-PlatformExclude/FirebaseAnalyticsWrap/include/FirebaseAnalyticsTarget.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/nanopb/spm_headers/nanopb.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/promises/Sources/FBLPromises/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/swift-package-manager-google-mobile-ads/GoogleMobileAdsTarget/include/GoogleMobileAdsTarget.modulemap",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleAppMeasurement/GoogleAppMeasurementWrapper/include/GoogleAppMeasurementTarget.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Public/GoogleUtilities-AppDelegateSwizzler.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities-Environment.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/Logger/Public/GoogleUtilities-Logger.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/MethodSwizzler/Public/GoogleUtilities-MethodSwizzler.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/NSData+zlib/Public/GoogleUtilities-NSData.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/Network/Public/GoogleUtilities-Network.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/Reachability/Public/GoogleUtilities-Reachability.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/GoogleUtilities/GoogleUtilities/UserDefaults/Public/GoogleUtilities-UserDefaults.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/firebase-ios-sdk/CoreOnly/Sources/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/firebase-ios-sdk/FirebaseAnalyticsWrapper/include/FirebaseAnalyticsWrapper.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/firebase-ios-sdk/SwiftPM-PlatformExclude/FirebaseAnalyticsWrap/include/FirebaseAnalyticsTarget.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/nanopb/spm_headers/nanopb.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/promises/Sources/FBLPromises/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/Dependencies/SwiftPackageManager/.build/checkouts/swift-package-manager-google-mobile-ads/GoogleMobileAdsTarget/include/GoogleMobileAdsTarget.modulemap",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.off.off.core;
+				PRODUCT_NAME = OffCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		51ABC0A216125CA113DF07EF /* Build configuration list for PBXProject "OffCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9764999EDC92241C70025133 /* Debug */,
+				60B8C7299369A45FF221983D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7F150A44342CB8F1DF4EE84 /* Build configuration list for PBXNativeTarget "OffCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				890D8E6405DEFA3381A0E25C /* Debug */,
+				B05607918AA379F73472AE2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C63CC09820D750F441BD0645 /* Project object */;
+}
